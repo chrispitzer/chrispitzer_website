@@ -3,7 +3,7 @@ title: "Hero"
 draft: true
 tags: []
 intro: "Hi, my name is"
-title_text: "Isabella."
+title_text: "Izy."
 subtitle: "I build things for the web"
 content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
 image: /images/hero.svg

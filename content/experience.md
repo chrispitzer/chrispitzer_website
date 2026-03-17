@@ -2,7 +2,7 @@
 title: "Experience"
 enable: true
 items:
-  - company: "Facebook"
+  - company: "Facebok"
     companyUrl: "https://example.com"
     jobs:
       - name: "Senior Software Developer"
