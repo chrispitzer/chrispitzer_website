@@ -1,5 +1,7 @@
 ---
 title: "Hero"
+draft: true
+tags: []
 intro: "Hi, my name is"
 title_text: "Isabella."
 subtitle: "I build things for the web"
