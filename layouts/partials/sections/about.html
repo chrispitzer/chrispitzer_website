@@ -1,0 +1,32 @@
+{{ if .Site.Params.about.enable | default false }}
+{{- $about := .Site.Language.Params.about | default .Site.Params.about -}}
+{{- $contentPage := .Site.GetPage "about" -}}
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">{{ if $contentPage }}{{ $contentPage.Title }}{{ else }}{{ $about.title | default (i18n "about") }}{{ end }}</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            {{ if or ($contentPage.Params.image) (.Site.Params.about.image) }}
+            <div class="col-sm-12 col-md-8 col-lg-4 mb-5 mb-sm-0 mb-md-5 mb-lg-0 d-none d-sm-none d-md-block">
+                <div class="image d-flex px-5">
+                    <img src="{{ if $contentPage }}{{ $contentPage.Params.image }}{{ else }}{{ .Site.Params.about.image }}{{ end }}" class="img-thumbnail mx-auto rounded-circle" alt="{{ .Site.Params.title }} profile picture">
+                </div>
+            </div>
+            {{ end }}
+            <div class="col-sm-12 col-md-12 col-lg-8 content">
+                {{ if $contentPage }}{{ $contentPage.Content | markdownify }}{{ else }}{{ $about.content | markdownify }}{{ end }}
+
+                {{ if or ($contentPage.Params.skills.enable) (.Site.Params.about.skills.enable) }}
+                {{ if or ($contentPage.Params.skills) (.Site.Params.about.skills.items) }}
+                {{ if $contentPage }}{{ $contentPage.Params.skills.title | default .Site.Params.about.skills.title }}{{ else }}{{ $about.skills.title | default .Site.Params.about.skills.title }}{{ end }}
+                <ul>
+                    {{ range $skill := or ($contentPage.Params.skills.items) (.Site.Params.about.skills.items) }}
+                    <li>{{ $skill | markdownify }}</li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
