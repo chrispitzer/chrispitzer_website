@@ -1,6 +1,6 @@
 ---
 title: "Hero"
-draft: true
+draft: false
 tags: []
 intro: "Hi, my name is"
 title_text: "Izy."
