@@ -4,7 +4,7 @@
 hugo_server() {
     big_echo "Starting Hugo development server..."
     export PATH="$HOME/bin:$PATH"
-    hugo server -D --bind 0.0.0.0
+    hugo server -D --bind 0.0.0.0 --baseURL http://localhost:1313
 }
 
 hugo_build() {
