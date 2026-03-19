@@ -1,6 +1,6 @@
 ---
 title: "About"
-draft: true
+draft: false
 tags: []
 image: "/images/me.png"
 skills:

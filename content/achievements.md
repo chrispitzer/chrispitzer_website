@@ -1,7 +1,7 @@
 ---
 title: "Achievements"
 enable: true
-draft: true
+draft: false
 items:
   - title: "Achievement 1"
     content: "Description of achievement 1."

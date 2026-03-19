@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 enable: true
-draft: true
+draft: false
 items:
   - title: "Project 1"
     content: "Description of project 1."
