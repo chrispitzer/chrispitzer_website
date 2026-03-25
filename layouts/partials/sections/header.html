@@ -1,3 +1,26 @@
+{{- /* theme is auto */}}
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.documentElement.classList.add('dark');
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            document.documentElement.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.documentElement.classList.add('dark');
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
 <!-- Show header on scroll up -->
 {{ if .Site.Params.navbar.stickyNavBar.enable | default false }}
 {{ $showNavBarOnScrollUp := .Site.Params.navbar.stickyNavBar.showOnScrollUp | default false }}
@@ -152,8 +175,6 @@
                     </li>
                     {{end}}
                     {{end}}
-
-                    {{- partial "sections/language-switcher.html" . -}}
 
                 </ul>
 
