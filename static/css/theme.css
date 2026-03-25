@@ -1,0 +1,33 @@
+/* dark mode defaults */
+:root {
+    --background-color: var(--background-color-dark);
+    --secondary-background-color: var(--secondary-background-color-dark);
+    --text-color: var(--text-color-dark);
+    --text-secondary-color: var(--text-secondary-color-dark);
+    --text-link-color: var(--text-link-color-dark);
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+}
+
+html {
+    background-color: var(--background-color) !important;
+    background: var(--background-color) !important;
+}
+
+html.dark {
+    background-color: var(--background-color) !important;
+    background: var(--background-color) !important;
+}
+
+body {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+#footer-socialNetworks-github-svg-path{
+    fill: #FFFFFF;
+}
+
+.text-secondary {
+    color: var(--text-secondary-color) !important;
+}
