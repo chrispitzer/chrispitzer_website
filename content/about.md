@@ -7,15 +7,19 @@ skills:
   enable: true
   title: "Here are a few technologies I've been working with recently:"
   items:
-    - "HTML"
-    - "CSS"
+    - "Python"
+    - "C++"
     - "JavaScript"
+    - "TypeScript"
+    - "Django"
     - "React"
-    - "Node"
-    - "Express"
+    - "FreeRTOS"
+    - "AWS"
+    - "ESP32"
+    - "Docker"
 tags: []
 ---
 
-I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+I'm a software engineer with experience across full-stack web development and embedded systems. As a technical co-founder at CollabCampfire and GlowFlock, I've led teams building everything from serverless collaboration platforms to distributed wireless lighting systems.
 
-I am currently working on a project that will be used to help people find the best way to get around the city.
+I enjoy solving complex problems at the intersection of hardware and software, and I'm passionate about building reliable, scalable systems.
