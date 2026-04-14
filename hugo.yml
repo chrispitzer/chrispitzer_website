@@ -136,7 +136,7 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/Chris_Pitzer_Resume_2026.pdf"
       download: true
       newPage: false
     socialLinks:

@@ -10,7 +10,7 @@ image: /images/hero.svg
 button:
   enable: true
   name: "Resume"
-  url: "/resume.pdf"
+  url: "/Chris_Pitzer_Resume_2026.pdf"
   download: true
   newPage: false
 socialLinks:
