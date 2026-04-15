@@ -2,6 +2,7 @@ header {
     z-index: 10;
     position: relative;
     top: 0;
+    background-color: var(--background-color) !important;
 }
 
 .showHeaderOnTop {
@@ -42,7 +43,7 @@ header .nav-link{
 .navbar-brand {
     color: var(--primary-color) !important;
     opacity: 0.95;
-} 
+}
 .navbar .nav-link:hover {
     color: var(--primary-color) !important;
 }
